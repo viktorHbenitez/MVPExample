@@ -60,7 +60,6 @@
 		930A7097215403B100690B20 /* MVPExample */ = {
 			isa = PBXGroup;
 			children = (
-				E44E80522419A227000DE980 /* Description */,
 				930A710C215BF92F00690B20 /* DataSource */,
 				930A710B215BF90C00690B20 /* Models */,
 				930A7109215BF8FA00690B20 /* Views */,
@@ -104,13 +103,6 @@
 				930A70AC215409EB00690B20 /* TrafficLightService.swift */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		E44E80522419A227000DE980 /* Description */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Description;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
