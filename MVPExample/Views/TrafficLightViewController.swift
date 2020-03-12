@@ -8,17 +8,23 @@
 
 import UIKit
 
-class TrafficLightViewController: UIViewController, TrafficLightViewDelegate {
+
+class TrafficLightViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UILabel!
+  
+  // MARK: - INSTANCE THE PRESENTER WITH THE MODEL REFERENCE
     private let trafficLightPresenter = TrafficLightPresenter(trafficLightService: TrafficLightService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      // MARK: - THIS VIEW OR VIEWCONTROLLER IS THE DELEGATE
         trafficLightPresenter.setViewDelegate(trafficLightViewDelegate: self)
     }
     
+  
+  // MARK: - USER ACTIONS @IBACTIONS, COMMUNICATE TO THE PRESENTER
     @IBAction func redLightAction(_ sender: Any) {
         trafficLightPresenter.trafficLightColorSelected(colorName:"Red")
     }
@@ -31,7 +37,12 @@ class TrafficLightViewController: UIViewController, TrafficLightViewDelegate {
         trafficLightPresenter.trafficLightColorSelected(colorName:"Green")
     }
     
-    func displayTrafficLight(description:(String)) {
-        descriptionLabel.text = description
-    }
+    
+}
+
+// MARK: - UPDATE THE VIEW, USING DELEGATE
+extension TrafficLightViewController : TrafficLightViewDelegate{
+  func displayTrafficLight(description:(String)) {
+      descriptionLabel.text = description
+  }
 }
