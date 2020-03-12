@@ -28,6 +28,7 @@
 		930A70AC215409EB00690B20 /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
 		930A70B0215411C600690B20 /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
 		930A7102215AC46A00690B20 /* TrafficLightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewController.swift; sourceTree = "<group>"; };
+		E48F803B241AEEEF00FF5A37 /* MVP Architecture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MVP Architecture.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		930A7097215403B100690B20 /* MVPExample */ = {
 			isa = PBXGroup;
 			children = (
+				E48F803A241AEE6F00FF5A37 /* Description */,
 				930A710C215BF92F00690B20 /* DataSource */,
 				930A710B215BF90C00690B20 /* Models */,
 				930A7109215BF8FA00690B20 /* Views */,
@@ -103,6 +105,14 @@
 				930A70AC215409EB00690B20 /* TrafficLightService.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E48F803A241AEE6F00FF5A37 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				E48F803B241AEEEF00FF5A37 /* MVP Architecture.playground */,
+			);
+			path = Description;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
